@@ -1,4 +1,4 @@
-System.out
+System.out,println();
 package reyes.test.arraylist;
 public class ReyesTestArrayList {
     public static void main(String[] args) {
