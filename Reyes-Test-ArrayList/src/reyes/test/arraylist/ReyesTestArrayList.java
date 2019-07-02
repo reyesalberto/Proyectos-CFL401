@@ -12,11 +12,11 @@ public class ReyesTestArrayList {
         int dato;
         boolean bandera=true;
         Scanner teclado = new Scanner(System.in);   
-        dato = teclado.nextint();
-        System.out.println("hola bay bay");
+        dato = teclado.nextInt();
+     System.out.println("hola bay bay");
         
-        ArrayList teclado;
-        teclado = new ArrayList((Collection) System.in);
+        ArrayList teclado1;
+        teclado1 = new ArrayList((Collection) System.in);
         ArrayList elem = new ArrayList();
         ArrayList <Integer>elem2;
         elem2 = new ArrayList();
@@ -25,11 +25,23 @@ public class ReyesTestArrayList {
         elem.add(7);
         
      while(bandera){
-         if(<=4){
-             dato=Scanner(System.in);
-             dato=teclado.netInt();
-         }
+         dato=teclado.nextInt(dato);
+         
+         
      }
+         if(<=4){
+             dato=teclado.nextInt(dato);
+             
+           
+    }else(<=7){
+         
+     }
+         
+     }
+     }
+        
+        
+     
         
         
         
@@ -101,3 +113,6 @@ dato=teclado.netLINE()
 }
 System.out.println(elem2);
 */
+     1- declaro las variables
+     2-declaro tipo de datos
+             
