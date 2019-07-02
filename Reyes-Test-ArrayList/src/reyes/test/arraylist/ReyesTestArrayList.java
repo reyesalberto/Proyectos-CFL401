@@ -58,6 +58,7 @@ public class ReyesTestArrayList {
     elem2.add(dato);
 }
    
+        System.out.println("hola soy bol");
     }
         
         
