@@ -7,7 +7,7 @@ import java.util.Iterator;
 import java.util.Scanner;
 
 public class ReyesTestArrayList {
-
+public Scanner s= new Scanner(System.in);
     public static void main(String[] args) {
         String nombre;
         int patas,edad;
@@ -113,13 +113,13 @@ public class ReyesTestArrayList {
         Iterator it = mascotas.iterator();
         //it.hasNext();// si hay proximo elemento true o folse si no exepcion el next para el proximo elemento
         //next();
-        
+       System.out.println(((Mascotas) it.next()).getNombre());
         while(it.hasNext()){
             Mascotas mascota = (Mascotas)it.next();
            // System.out.println(((Mascotas) it.next()).getNombre());
             System.out.println("nombre:"+ mascota.getNombre()+" patas:"+ mascota.getPatas()+" años:" + mascota.getEdad());
         }
-        Mascotas mascotas = it.next()
+        Mascotas mascotas = (Mascotas) it.next();
         } 
         Mascotas perro1 = new Mascotas("Tory",4,22);
          mascotas.add(new Mascotas("Tory",4,22));

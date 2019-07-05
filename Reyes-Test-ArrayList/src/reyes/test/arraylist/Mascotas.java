@@ -19,7 +19,11 @@ public class Persona  {
     private String nombre;
     private int  edad;
     private ArrayList <Mascotas> mascotas;
-  
+  /**
+   * el metodo getNombre es para conseguir el nombre.
+   * @return el nombre
+   */
+    //parametro se utiliza para los nombres
         public String getNombre() {
             return nombre;
         }
