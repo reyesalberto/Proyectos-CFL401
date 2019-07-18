@@ -6,6 +6,7 @@
 package ventana.Ventana;
 
 import java.awt.Color;
+import java.awt.event.KeyEvent;
 
 /**
  *
@@ -91,7 +92,6 @@ public class VentanaLogin extends javax.swing.JFrame {
 
         jLabel9.setText("Edad");
 
-        usuario.setText("jTextField2");
         usuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 usuarioActionPerformed(evt);
@@ -104,7 +104,6 @@ public class VentanaLogin extends javax.swing.JFrame {
             }
         });
 
-        nomArchivo.setText("jTextField5");
         nomArchivo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 nomArchivoActionPerformed(evt);
@@ -145,9 +144,7 @@ public class VentanaLogin extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnIngresar, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(nomArchivo, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 235, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(btnIngresar))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addGap(32, 32, 32)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -171,14 +168,14 @@ public class VentanaLogin extends javax.swing.JFrame {
                                                 .addComponent(jLabel8)))
                                         .addGap(0, 0, Short.MAX_VALUE)))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(usuario, javax.swing.GroupLayout.DEFAULT_SIZE, 232, Short.MAX_VALUE)
-                                    .addComponent(nombre)
-                                    .addComponent(contyraseña)
-                                    .addComponent(mail)
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addGap(26, 26, 26)
-                                        .addComponent(edad, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                        .addComponent(usuario, javax.swing.GroupLayout.DEFAULT_SIZE, 232, Short.MAX_VALUE)
+                                        .addComponent(nombre)
+                                        .addComponent(contyraseña)
+                                        .addComponent(mail))
+                                    .addComponent(nomArchivo, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 235, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(edad, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -221,13 +218,10 @@ public class VentanaLogin extends javax.swing.JFrame {
                     .addComponent(mail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel9)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, Short.MAX_VALUE)
-                        .addComponent(btnIngresar))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(edad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                    .addComponent(jLabel9)
+                    .addComponent(edad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 31, Short.MAX_VALUE)
+                .addComponent(btnIngresar)
                 .addContainerGap())
         );
 
@@ -259,7 +253,6 @@ public class VentanaLogin extends javax.swing.JFrame {
     }//GEN-LAST:event_btnIngresarActionPerformed
 
     private void edadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_edadActionPerformed
-
     }//GEN-LAST:event_edadActionPerformed
 
     private void apellidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_apellidoActionPerformed
@@ -268,16 +261,19 @@ public class VentanaLogin extends javax.swing.JFrame {
 
     private void edadKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_edadKeyPressed
         // TODO add your handling code here
-        int edad;
-          (edad.getText().length()==0!! Integer.parseInt(edad.getText())<=150)
+        //String Text;
+        /*String edad2 = edad.getText()+evt.getKeyChar();
+        
+          edad.getText().length()==0;
+          Integer.parseInt(edad.getText())<=150;
         if(evt.getKeyChar()>=150)
             System.out.println(evt.getKeyChar());
-        System.out.println(evt.getKeyChar());
+        System.out.println(evt.getKeyChar()); 
            evt.consume();
         String texto=edad.getTex();
  
  if(texto.length()<='3'){
-     if(evt.)
+     
   if(evt.getKeyChar()>='0'&& evt.getKeyChar()<='9') {
         System.out.println(evt.getKeyChar());
   }else{  
@@ -313,7 +309,25 @@ if(evt.getkeyChar()>`0` && evt.getKeyChar()<=´0´){
             evt.consume();
             }
     }
+  
+   if(edad.getText(.length==0!!Integer.parseInt(edad.getText())<=150){
+       
+    }else{
+            edad.setBackground(Color.RED);
+            evt.consume();
+            }
+    System.out.println(evt.getKeyChar());
+   if (edad.getText().length()== 0 !! Integer.parseInt(edad.getText())<=150){
+        edad.setBackground(Color.BLUE);
+        evt.consume();
+    }*/
         
+        if(evt.getKeyChar()>='0'&& evt.getKeyChar()<'9'&& edad.getText().length()<3 && Integer.parseInt(edad.getText()+ evt.getKeyChar())<150){
+          
+        }else{
+            edad.setBackground(Color.red);
+            evt.consume();
+        }
     }//GEN-LAST:event_edadKeyPressed
 
     private void contyraseñaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_contyraseñaActionPerformed
@@ -393,4 +407,8 @@ if(evt.getkeyChar()>`0` && evt.getKeyChar()<=´0´){
     private javax.swing.JTextField nombre;
     private javax.swing.JTextField usuario;
     // End of variables declaration//GEN-END:variables
+
+    private boolean puedoEscribirLaLetra(KeyEvent evt) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }
