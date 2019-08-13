@@ -15,8 +15,7 @@ public class Perros extends Animales{
     private int catPelos;
     
     public Perros (String nombre,int patas,int cantPelos){
-    this.nombre=nombre;
-    this.patas=patas;
+     Super(nombre,patas,100);
     this.catPelos=cantPelos;
     }
 
@@ -73,5 +72,9 @@ public void correr(){
  public void comer(){
      
  }
+
+    private void Super(String nombre, int patas, int i) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }
 

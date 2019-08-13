@@ -16,9 +16,7 @@ public class Aves extends Animales {
     private int cantPlumas;
 
     public Aves(String nombre, int patas, int alas, int cantPlumas) {
-        this.nombre=nombre;
-        this.patas=patas;
-        this.alas=alas;
+       Super (nombre,patas,100);
         this.cantPlumas=cantPlumas;
         
         
@@ -73,4 +71,8 @@ public class Aves extends Animales {
  public void volar(){
      
  }
+
+    private void Super(String nombre, int patas, int i) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }

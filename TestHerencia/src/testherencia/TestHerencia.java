@@ -42,8 +42,12 @@ public class TestHerencia {
        gato2.jugar();
        
        
-       
-       gato1.jugar(gato2);
+       gato2.getEnergia();
+       System.out.println(gato2.getEnergia());
+       System.out.println(gato1.getEnergia());
+       gato1.jugarCon(gato2);
+       System.out.println(gato2.getEnergia());
+       System.out.println(gato1.getEnergia());
     }
    
 }

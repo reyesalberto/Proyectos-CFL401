@@ -11,10 +11,13 @@ public class Gatos extends Animales {
     private int catPelos;
 
     public Gatos(String nombre, int patas, int cantPelos) {
-        this.nombre=nombre;
-        this.patas=patas;
+        Super( nombre, patas,100);
         this.catPelos=cantPelos;
-    }
+  
+   }    
+     
+  
+   
 
     public String getNombre() {
         return nombre;
@@ -44,14 +47,17 @@ public class Gatos extends Animales {
             energia+=5;
         }
     }
-    public void jugar(Gatos gato){
-        if(energia>20){
-            energia+=20;
-            
-        }
-    }
-
+    
   public void jugar() {
       
-  } 
+  }
+  
+  public void jugarCon(Gatos gato){
+      gato.jugar();
+      jugar();
+  }
+
+    private void Super(String nombre, int patas, int i) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }

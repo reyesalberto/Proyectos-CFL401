@@ -9,6 +9,13 @@ public class Animales {
     protected String nombre;
     protected int pàtas;
     protected int energia;
+    
+public void Animales(String nombre, int patas,int energisa) {
+    this.nombre=nombre;
+     this.pàtas=patas;
+     this.energia=energia;        
+}   
+    
 
     public String getNombre() {
         return nombre;
